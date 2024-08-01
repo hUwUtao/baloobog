@@ -4,7 +4,7 @@ services:
     ports:
       - 3880:80
     volumes:
-      - config.json:/app/config.json
+      - ./config.json:/app/config.json
     links:
       - dumbd
   dumbd:
