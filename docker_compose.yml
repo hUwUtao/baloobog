@@ -1,0 +1,14 @@
+services:
+  baloo:
+    build: ./balooProxy
+    ports:
+      - 3880:80
+    volumes:
+      - config.json:/app/config.json
+    link:
+      - dumbd
+  dumbd:
+    build: ./
+
+networks:
+  rail:

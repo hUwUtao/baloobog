@@ -1,0 +1,50 @@
+{
+    "proxy": {
+        "cloudflare": true,
+        "network": "tcp",
+        "adminsecret": ":3",
+        "apisecret": ":3",
+        "secrets": {
+            "captcha": ":3",
+            "cookie": ":3",
+            "javascript": ":3"
+        },
+        "timeout": {
+            "idle": 3,
+            "read": 5,
+            "write": 5,
+            "read_header": 5
+        },
+        "ratelimit_time": 0,
+        "ratelimits": {
+            "challengeFailures": 40,
+            "noRequestsSent": 10,
+            "requests": 1000,
+            "unknownFingerprint": 150
+        },
+        "colors": null
+    },
+    "domains": [
+        {
+            "name": "localhost",
+            "backend": "dumbd:8080",
+            "scheme": "http",
+            "certificate": "",
+            "key": "",
+            "webhook": {
+                "url": "",
+                "name": "",
+                "avatar": "",
+                "attack_start_msg": "",
+                "attack_stop_msg": ""
+            },
+            "firewallRules": [],
+            "bypassStage1": 75,
+            "bypassStage2": 250,
+            "disableBypassStage3": 100,
+            "disableRawStage3": 250,
+            "disableBypassStage2": 50,
+            "disableRawStage2": 75
+        }
+    ]
+}
