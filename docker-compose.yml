@@ -2,7 +2,7 @@ services:
   baloo:
     build: ./balooProxy
     ports:
-      - 3880:80
+      - 127.0.0.1:3880:80
     volumes:
       - ./config.json:/app/config.json
     links:
