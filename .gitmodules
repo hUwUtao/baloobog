@@ -1,0 +1,3 @@
+[submodule "balooProxy"]
+	path = balooProxy
+	url = https://github.com/41Baloo/balooProxy
