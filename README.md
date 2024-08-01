@@ -11,4 +11,5 @@ A BalooProxy anti-bot setup to act as a Caddy/Nginx auth server.
 ## How to run
 
 - Clone
+- `make all` to do anything necessary
 - `docker-compose up -d`

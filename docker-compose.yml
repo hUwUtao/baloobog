@@ -5,10 +5,7 @@ services:
       - 3880:80
     volumes:
       - config.json:/app/config.json
-    link:
+    links:
       - dumbd
   dumbd:
     build: ./
-
-networks:
-  rail:
